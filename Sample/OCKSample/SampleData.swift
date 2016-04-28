@@ -43,7 +43,8 @@ class SampleData: NSObject {
         BackPain(),
         Mood(),
         BloodGlucose(),
-        Weight()
+        Weight(),
+        InhalerUsage()
     ]
     
     /**

@@ -42,10 +42,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8605A5B91C4F04EC00DD65FF"
-            BuildableName = "CareKit.framework"
-            BlueprintName = "CareKit"
-            ReferencedContainer = "container:CareKit.xcodeproj">
+            BlueprintIdentifier = "B5C1008C1CB12E0C00FAD7E8"
+            BuildableName = "OCKSample.app"
+            BlueprintName = "OCKSample"
+            ReferencedContainer = "container:Sample/OCKSample.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -61,15 +61,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8605A5B91C4F04EC00DD65FF"
-            BuildableName = "CareKit.framework"
-            BlueprintName = "CareKit"
-            ReferencedContainer = "container:CareKit.xcodeproj">
+            BlueprintIdentifier = "B5C1008C1CB12E0C00FAD7E8"
+            BuildableName = "OCKSample.app"
+            BlueprintName = "OCKSample"
+            ReferencedContainer = "container:Sample/OCKSample.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>

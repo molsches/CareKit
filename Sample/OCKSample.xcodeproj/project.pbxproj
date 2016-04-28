@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		2436E4341CD18BFD00ABE381 /* ResearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2436E4311CD18BED00ABE381 /* ResearchKit.framework */; };
 		2436E4351CD18BFD00ABE381 /* ResearchKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2436E4311CD18BED00ABE381 /* ResearchKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		64FC98091CD29A1000B47320 /* InhalerUsage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FC98081CD29A1000B47320 /* InhalerUsage.swift */; };
+		64FC980F1CD29A6C00B47320 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64FC980E1CD29A6C00B47320 /* HealthKit.framework */; };
 		B55565771CC82FCA00513644 /* CareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B55565711CC82F8D00513644 /* CareKit.framework */; };
 		B55565781CC82FCA00513644 /* CareKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B55565711CC82F8D00513644 /* CareKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B555759C1CB3DB8C0028DC37 /* NSCalendar+Dates.swift in Sources */ = {isa = PBXBuildFile; fileRef = B555759B1CB3DB8C0028DC37 /* NSCalendar+Dates.swift */; };
@@ -98,6 +100,8 @@
 
 /* Begin PBXFileReference section */
 		2436E42A1CD18BEC00ABE381 /* ResearchKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ResearchKit.xcodeproj; path = ../dependency/ResearchKit.xcodeproj; sourceTree = "<group>"; };
+		64FC98081CD29A1000B47320 /* InhalerUsage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InhalerUsage.swift; sourceTree = "<group>"; };
+		64FC980E1CD29A6C00B47320 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		B555759B1CB3DB8C0028DC37 /* NSCalendar+Dates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSCalendar+Dates.swift"; sourceTree = "<group>"; };
 		B555759D1CB3DBBE0028DC37 /* OCKInsightItem+EmptyMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OCKInsightItem+EmptyMessage.swift"; sourceTree = "<group>"; };
 		B56848B51CB5085E00D190EE /* InsightsBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsightsBuilder.swift; sourceTree = "<group>"; };
@@ -132,6 +136,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64FC980F1CD29A6C00B47320 /* HealthKit.framework in Frameworks */,
 				2436E4341CD18BFD00ABE381 /* ResearchKit.framework in Frameworks */,
 				B55565771CC82FCA00513644 /* CareKit.framework in Frameworks */,
 			);
@@ -196,6 +201,7 @@
 				B58A3FBC1CC81FF9009CF1B9 /* Mood.swift */,
 				B58A3FBE1CC8204A009CF1B9 /* BloodGlucose.swift */,
 				B58A3FC01CC820E8009CF1B9 /* Weight.swift */,
+				64FC98081CD29A1000B47320 /* InhalerUsage.swift */,
 			);
 			name = Assessments;
 			sourceTree = "<group>";
@@ -203,6 +209,7 @@
 		B5C100841CB12E0C00FAD7E8 = {
 			isa = PBXGroup;
 			children = (
+				64FC980E1CD29A6C00B47320 /* HealthKit.framework */,
 				B5C1008F1CB12E0C00FAD7E8 /* OCKSample */,
 				B555657F1CC82FEF00513644 /* Linked frameworks */,
 				B5C1008E1CB12E0C00FAD7E8 /* Products */,
@@ -283,6 +290,7 @@
 				TargetAttributes = {
 					B5C1008C1CB12E0C00FAD7E8 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 8SQK7H5L22;
 						SystemCapabilities = {
 							com.apple.HealthKit = {
 								enabled = 1;
@@ -370,6 +378,7 @@
 			files = (
 				B5C100E01CB158D900FAD7E8 /* CarePlanStoreManager.swift in Sources */,
 				B58A3FB61CC81ED8009CF1B9 /* TakeMedication.swift in Sources */,
+				64FC98091CD29A1000B47320 /* InhalerUsage.swift in Sources */,
 				B582E54E1CC6FD1200E80096 /* HealthSampleBuilder.swift in Sources */,
 				B58A3FBF1CC8204A009CF1B9 /* BloodGlucose.swift in Sources */,
 				B58A3FB91CC81F31009CF1B9 /* Assessment.swift in Sources */,
@@ -518,7 +527,7 @@
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = OCKSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.CareKit";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecodeCatalyze.CareKit";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -532,7 +541,7 @@
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = OCKSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.CareKit";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecodeCatalyze.CareKit";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
