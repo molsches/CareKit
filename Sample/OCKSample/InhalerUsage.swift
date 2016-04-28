@@ -9,12 +9,6 @@
 import ResearchKit
 import CareKit
 
-/**
- Struct that conforms to the `Sample` protocol to define a weight assessment.
- */
-
-import CareKit
-import ResearchKit
 
 /**
  Struct that conforms to the `Assessment` protocol to define a back pain
