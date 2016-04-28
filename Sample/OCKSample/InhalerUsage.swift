@@ -59,7 +59,7 @@ struct InhalerUsage: Assessment {
         // Create a question and answer format.
         let answerFormat = ORKScaleAnswerFormat(
             maximumValue: 10,
-            minimumValue: 1,
+            minimumValue: 0,
             defaultValue: -1,
             step: 1,
             vertical: false,
